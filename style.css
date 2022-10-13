@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, #form-container {
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav {
+    height: 150px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav h1 {
+    font-size: 3.5rem;
+}
+
+nav button {
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+}
+
+#form-container {
+    position: fixed;
+    background-color: rgb(253 255 245 / 66%);
+    width: 100vw;
+    display: none;
+    z-index: 10;
+}
+
+#form {
+    width: 300px;
+    height: 400px;
+    background-color: beige;
+    position: fixed;
+    top: 200px;
+    left: calc(50% - 150px);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+form input {
+    border: none;
+    margin-bottom: 15px;
+    margin-top: -3px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttons button {
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#buttons #btnAdd {
+    width: 60%;
+    background-color: sandybrown;
+}
+
+#buttons #btnCancel {
+    width: 30%;
+    background-color: white;
+}
+
+#books-container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    grid-template-rows: repeat(auto-fit, 250px);
+    gap: 50px;
+}
+
+.book-card {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .book-card::before {
+    content: '';
+    background-image: url(https://www.ibs.it/images/9788845934568_0_536_0_75.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all .2s;
+}
+
+.book-card:hover::before {
+    display: none;
+} */
